@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    background-color: #e3eae0;
+    font-family: 'montserrat', sans-serif;
+    text-align: center;
+}
+
+#ahorcado{
+    height: 161px;
+    width: 171px;
+    background-image: url(./ahorcado.png);
+}
+
+#contenedor {
+    background-color: #f1eae5;
+    border: 3px solid #a99681;
+    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    width: 800px;
+    height: 420px;
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    box-shadow: 20px 20px rgba(0,0,0,.15);
+}
+
+#contenedor::before {
+    content: '';
+    border: 2px solid #a99681;
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0) scale(1.015) rotate(0.5deg);
+    border-radius: 1% 1% 2% 4% / 2% 6% 5% 4%;
+}
+
+#elementos {
+    color: #423f3f;
+    width: 72%;
+    height: 100%;
+    float: right;
+}
+
+#resultado {
+    color: #615445;
+    background-color: #f5edb1;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.imagen {
+    width: 28%;
+    height: 100%;
+    float: right;
+    margin-top: 18px;
+}
+
+.contenido {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+    overflow: hidden;
+    padding: 20px;
+}
+
+input {
+    background-color: #b1bbac;
+    border-color: #99aa90;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 15px;
+ }
+
+input:focus::placeholder {
+    color: transparent;
+ }
+
+button {
+    background-color: #a99681;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 15px;
+    padding: 6px 15px;
+    font-family: 'poppins', sans-serif;
+    transition: transform 20ms ease-in;
+    margin-left: 7px;
+    }
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
